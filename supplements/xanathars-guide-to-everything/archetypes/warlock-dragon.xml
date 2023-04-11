@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>The Dragon</name>
-		<description>The Celestial Otherworldly Patron from Xanatharâ€™s Guide to Everything</description>
+		<description>The Dragon Otherworldly Patron from Xanatharâ€™s Guide to Everything</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanatharâ€™s Guide to Everything</author>
 		<update version="0.0.6">
 			<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/archetypes/warlock-celestial.xml" />
@@ -63,7 +63,7 @@
 		</spellcasting>
 	</element>
 
-	<element name="Healing Light" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_DRACONIC_BLAST"">
+	<element name="Healing Light" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_DRACONIC_BLAST">
 		<description>
 			<p>At 1st level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.</p>
 			<p class="indent">As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.</p>
