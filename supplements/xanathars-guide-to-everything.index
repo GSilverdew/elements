@@ -42,6 +42,7 @@
 		<file name="sorcerer-stormsorcery.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/archetypes/sorcerer-stormsorcery.xml" />
 		<file name="warlock-celestial.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/archetypes/warlock-celestial.xml" />
 		<file name="warlock-hexblade.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/archetypes/warlock-hexblade.xml" />
+                <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/archetypes/warlock-dragon.xml" />
 		<file name="wizard-warmagic.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/archetypes/wizard-warmagic.xml" />
 
 		<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything/eldritch-invocations.xml" />
