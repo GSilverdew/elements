@@ -69,12 +69,12 @@
 			<p class="indent">When you gain this feature, select one damage type of acid, cold, fire, lightning, or poison. Creatures in the area of effect must make a Dexterity saving throw, or take 1d10 elemental damage of the selected type. This feature's damage increases by 1d10 when you reach 5th level in Warlock (2d10), 11th level (3d10), and 17th level (4d10).</p>
 			<p class="indent">When you use this ability, you can expend a pact magic spell slot to empower the draconic blast, dealing 1d10 additional damage per level of the pact magic slot expended. When empowered, it heals half damage even against creatures that pass their saving throw against it.</p>
 		</description>
-		<sheet action="Bonus Action">
+		<sheet action="Action">
 			<description>You can unleash a draconic breath in a 30 foot cone or a 60 foot long, 5 food wide line. Affected creatures must make Dexterity saving throw with DC equal to your spell save DC, or take 2d10 damage of your chosen element. When you use this ability, you can expend a pact magic spell slot to empower the draconic blast, dealing 1d10 additional damage per level of the pact magic slot expended. When empowered, it heals half damage even against creatures that pass their saving throw against it.</description>
 		</sheet>
 	</element>
 
-	<element name="Radiant Soul" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_ELEMENTAL_DEVASTATION">
+	<element name="Elemental Devastation" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_ELEMENTAL_DEVASTATION">
 		<description>
 			<p>At 6th level, when you deal the elemental damage type you selected as part of the Dragon blast to a creature, you can inflict an additional elemental ailment baseed on the elemental type. You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest. </p>
 		</description>
