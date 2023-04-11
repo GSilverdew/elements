@@ -12,8 +12,8 @@
 	<element name="The Dragon" type="Archetype" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_CELESTIAL">
 		<supports>Otherworldly Patron</supports>
 		<description>
-			<p>Your patron is a powerful being of the Upper Planes. You have bound yourself to an ancient empyrean, solar, ki-rin, or unicorn or to another entity that resides in the planes of everlasting bliss. Your pact with that being allows you to experience the barest touch of the holy light that illuminates the multiverse.</p>
-			<p class="indent">Being connected to such power can cause changes in your behavior and beliefs. You might find yourself driven to annihilate the undead, to defeat fiends, and to protect the innocent. At times, your heart might also be filled with a longing for the celestial realm of your patron, a desire to wander that paradise for the rest of your days. But you know that your mission is among mortals for now and that your pact binds you to bring light to the dark places of the world.</p>
+			<p>You've made a pact with a mighty dragon, who has bestowed you with a fraction of its terrifying power. The details of the arrangement varies widely - a metallic dragon may have made the pact to create a force of good or save a life, a chromatic dragon may have made their pact with you in exhange for service... or part of some manipulative plan that the minds of lesser mortals would struggle to comprehend.</p>
+			<p class="indent">Most often these bonds are granted by ancient dragons steeped in immense power and knowledge, but sometimes partnerships of the lesser mortals and younger dragons have been recorded in more unique classes </p>
 			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" />
 			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_DRACONIC_BLAST" />
 			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_ELEMENTAL_DEVASTATION" />
@@ -33,16 +33,16 @@
 	<element name="Expanded Spell List" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST">
 		<supports>Warlock</supports>
 		<description>
-			<p>The Celestial lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
-			<h5>CELESTIAL EXPANDED SPELLS</h5>
+			<p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>DRAGON EXPANDED SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Spell Level</td><td>Spells</td></tr>
 				</thead>
-				<tr><td>1st</td><td><em>guiding bolt, cure wounds</em></td></tr>
-				<tr><td>2nd</td><td><em>flaming sphere, lesser restoration</em></td></tr>
-				<tr><td>3rd</td><td><em>daylight, revivify</em></td></tr>
-				<tr><td>4th</td><td><em>guardian of faith, wall of fire</em></td></tr>
+				<tr><td>1st</td><td><em>absorb elements, chromatic orb</em></td></tr>
+				<tr><td>2nd</td><td><em>alter self, dragon's breath</em></td></tr>
+				<tr><td>3rd</td><td><em>fear, wind wall</em></td></tr>
+				<tr><td>4th</td><td><em>fire shield, wall of fire</em></td></tr>
 				<tr><td>5th</td><td><em>flame strike, greater restoration</em></td></tr>
 			</table>
 		</description>
@@ -55,41 +55,32 @@
 			<extend>ID_PHB_SPELL_ALTER_SELF</extend>
 			<extend>ID_XGTE_SPELL_DRAGONS_BREATH</extend>
 			<extend>ID_PHB_SPELL_FEAR</extend>
-			<extend>ID_PHB_SPELL_WIND)WALL</extend>
-			<extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+			<extend>ID_PHB_SPELL_WIND_WALL</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
 			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
 			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
 			<extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
 		</spellcasting>
 	</element>
 
-	<element name="Healing Light" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_DRACONIC_BLAST">
+	<element name="Draconic Blast" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_DRACONIC_BLAST">
 		<description>
-			<p>At 1st level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.</p>
-			<p class="indent">As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.</p>
-			<p class="indent">Your pool regains all expended dice when you finish a long rest.</p>
+			<p>Beginning at first level, you gain the ability to unleash blasts of primal draconic energy from your hand or mouth. You can unleash this power in a 30 foot cone or a 60 foot long, 5 food wide line. Invocations that apply to eldritch blast also apply to Draconic Blast (increases to range apply half as much range to the line form, and one quarter the range of the cone).</p>
+			<p class="indent">When you gain this feature, select one damage type of acid, cold, fire, lightning, or poison. Creatures in the area of effect must make a Dexterity saving throw, or take 1d10 elemental damage of the selected type. This feature's damage increases by 1d10 when you reach 5th level in Warlock (2d10), 11th level (3d10), and 17th level (4d10).</p>
+			<p class="indent">When you use this ability, you can expend a pact magic spell slot to empower the draconic blast, dealing 1d10 additional damage per level of the pact magic slot expended. When empowered, it heals half damage even against creatures that pass their saving throw against it.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{healing light:dice pool}}d6/Long Rest">
-			<description>You can use d6s from your pool to heal an ally you can see within 60 feet. The maximum number of dice you can use at once is {{healing light:max}}. Roll spent dice and restore a number of hit points equal to the total.</description>
+		<sheet action="Bonus Action">
+			<description>You can unleash a draconic breath in a 30 foot cone or a 60 foot long, 5 food wide line. Affected creatures must make Dexterity saving throw with DC equal to your spell save DC, or take 2d10 damage of your chosen element. When you use this ability, you can expend a pact magic spell slot to empower the draconic blast, dealing 1d10 additional damage per level of the pact magic slot expended. When empowered, it heals half damage even against creatures that pass their saving throw against it.</description>
 		</sheet>
-		<rules>
-			<stat name="healing light:dice pool" value="level:warlock" />
-			<stat name="healing light:dice pool" value="1" />
-			<stat name="healing light:max" value="1" bonus="base" />
-			<stat name="healing light:max" value="charisma:modifier" bonus="base" />
-		</rules>
 	</element>
 
 	<element name="Radiant Soul" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRAGON_ELEMENTAL_DEVASTATION">
 		<description>
-			<p>Starting at 6th level, your link to the Celestial allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant or fire damage, you can add your Charisma modifier to one radiant or fire damage roll of that spell against one of its targets. </p>
+			<p>At 6th level, when you deal the elemental damage type you selected as part of the Dragon blast to a creature, you can inflict an additional elemental ailment baseed on the elemental type. You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest. </p>
 		</description>
 		<sheet>
-			<description>You can add +{{charisma:modifier}} to one radiant or fire damage roll against one target.</description>
+			<description>At 6th level, when you deal the elemental damage type you selected as part of the Dragon blast to a creature, you can inflict an additional elemental ailment baseed on the elemental type. You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</description>
 		</sheet>
-		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
-		</rules>
 	</element>
 
 	<element name="Celestial Resilience" type="Archetype Feature" source="Xanatharâ€™s Guide to Everything" id="ID_WOTC_XGTE_CELESTIAL_CELESTIAL_RESILIENCE">
